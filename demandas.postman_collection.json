@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "712b1d4b-67ce-4b64-951c-1540ceb7aac5",
+		"name": "demandas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get http://127.0.0.1:8000/api/admin/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/admin/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						""
+					]
+				},
+				"description": "Visualização de todas as demandas pelo admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Get http://127.0.0.1:8000/api/admin/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/admin/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"1"
+					]
+				},
+				"description": "Visualização de uma única demanda pelo admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Get http://127.0.0.1:8000/api/anunciante/8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/anunciante/8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"anunciante",
+						"8"
+					]
+				},
+				"description": "Visualização de todas as demandas por um anunciante"
+			},
+			"response": []
+		},
+		{
+			"name": "Post http://127.0.0.1:8000/api/anunciante/8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descricao",
+							"value": "Peça",
+							"type": "text"
+						},
+						{
+							"key": "endereco",
+							"value": "Rua Y",
+							"type": "text"
+						},
+						{
+							"key": "contato",
+							"value": "2195342356",
+							"type": "text"
+						},
+						{
+							"key": "anunciante",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Aberto",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/anunciante/8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"anunciante",
+						"8"
+					]
+				},
+				"description": "Criaçãod e uma demanda por um anunciante"
+			},
+			"response": []
+		},
+		{
+			"name": "Put http://127.0.0.1:8000/api/anunciante/8/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descricao",
+							"value": "Peça",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "endereco",
+							"value": "Rua Z",
+							"type": "text"
+						},
+						{
+							"key": "contato",
+							"value": "2195342356",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "anunciante",
+							"value": "8",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "Aberto",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/anunciante/8/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"anunciante",
+						"8",
+						"5"
+					]
+				},
+				"description": "Atualização de uma demanda de um anunciante"
+			},
+			"response": []
+		},
+		{
+			"name": "Put status http://127.0.0.1:8000/api/anunciante/8/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descricao",
+							"value": "Peça",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "endereco",
+							"value": "Rua Z",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "contato",
+							"value": "2195342356",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "anunciante",
+							"value": "8",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "Finalizado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/anunciante/8/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"anunciante",
+						"8",
+						"5"
+					]
+				},
+				"description": "Atualização do status por um anunciante"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete http://127.0.0.1:8000/api/anunciante/8/5",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descricao",
+							"value": "Peça",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "endereco",
+							"value": "Rua Z",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "contato",
+							"value": "2195342356",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "anunciante",
+							"value": "8",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "Finalizado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/anunciante/8/15",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"anunciante",
+						"8",
+						"15"
+					]
+				},
+				"description": "Remoção de uma demanda por um anunciante"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
